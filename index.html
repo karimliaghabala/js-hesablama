@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadə JavaScript məsələləri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#calculator">HESABLAYICI</a></li>
+                <li><a href="#">QİYMƏTLƏNDİRİLMƏ</a></li>
+                <li><a href="#">FAKTORİAL</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <!-- CALCULATOR -->
+            <h1>MEXANIKI HESABLAYICI</h1>
+            <div class="calculator">
+                <div class="ededler">
+                    Ədəd1: <input type="text" id="eded1"> <br><br>
+                    Ədəd2: <input type="text" id="eded2"> <br>
+                </div>
+                    <select id="hesab">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                <div class="cavablar">
+                    <button onclick="calculator();">=</button><br>
+                    Cavab: <input type="text" id="cavab">
+                </div>
+            </div><hr>
+            <!-- IF ELSE ILE QIYMETLENDIRME -->
+            <h1>QEYDIYYAT FORMU</h1>
+            <form action="#" method="POST">
+                <label>
+                    Ad:
+                    <input type="text" placeholder="adınızı daxil edin">
+                </label><br>
+                <label>
+                    Soyad:
+                    <input type="text" placeholder="Soyadınızı daxil edin">
+                </label><br>                
+                <label>
+                    Ata adı:
+                    <input type="text" placeholder="Ata adını daxil edin">
+                </label><br>
+                <label for="k">Qadın</label>
+                <input type="radio"value="Kadin" name="cinsiyyet">
+                <label for="E">Kişi</label>
+                <input type="radio"value="Erkek"name="cinsiyyet"><br>
+                <label>
+                    Elektron poçt ünvanı:
+                    <input type="email" placeholder="email daxil edin">
+                </label><br>
+                <label>
+                    Qaydalar ilə razıyam:
+                    <input type="checkbox" >
+                </label><br>
+                <label>
+                    <input type="submit" value="Təsdiq et">
+                </label><br>
+            </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
